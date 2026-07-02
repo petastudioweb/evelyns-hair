@@ -1,0 +1,742 @@
+/*======================================
+EVELYN'S HAIR
+Designed by Peta Studio
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fff;
+color:#222;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:100px 0;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-heading span{
+display:inline-block;
+color:#d88ca6;
+font-size:14px;
+font-weight:600;
+letter-spacing:2px;
+margin-bottom:10px;
+text-transform:uppercase;
+}
+
+.section-heading h2{
+font-family:'Playfair Display',serif;
+font-size:48px;
+margin-bottom:15px;
+}
+
+.section-heading p{
+max-width:700px;
+margin:auto;
+color:#666;
+font-size:18px;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.nav-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+height:85px;
+
+}
+
+.logo{
+
+font-family:'Playfair Display',serif;
+
+font-size:34px;
+
+font-weight:700;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+align-items:center;
+
+}
+
+nav a{
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#d88ca6;
+
+}
+
+.book-btn{
+
+background:#d88ca6;
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.book-btn:hover{
+
+background:#c67694;
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+height:100vh;
+
+background:url("images/hero.jpg") center center/cover;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:72px;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:0 auto 40px;
+
+font-size:20px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+background:#d88ca6;
+
+color:#fff;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+display:inline-block;
+
+}
+
+.primary-btn:hover{
+
+background:#c67694;
+
+transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+background:white;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+display:inline-block;
+
+}
+
+.secondary-btn:hover{
+
+background:#f7dce6;
+
+transform:translateY(-4px);
+
+}
+/*==========================
+ABOUT
+==========================*/
+
+#about{
+background:#ffffff;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.about-image img{
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+.about-text span{
+display:inline-block;
+color:#d88ca6;
+font-weight:600;
+letter-spacing:2px;
+font-size:14px;
+margin-bottom:15px;
+text-transform:uppercase;
+}
+
+.about-text h2{
+font-family:'Playfair Display',serif;
+font-size:48px;
+margin-bottom:25px;
+line-height:1.2;
+}
+
+.about-text p{
+margin-bottom:20px;
+color:#666;
+font-size:17px;
+}
+
+.about-btn{
+display:inline-block;
+margin-top:15px;
+padding:15px 35px;
+background:#d88ca6;
+color:#fff;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.about-btn:hover{
+background:#c67694;
+transform:translateY(-3px);
+}
+
+/*==========================
+WHY CHOOSE US
+==========================*/
+
+#why-us{
+background:#fff7fa;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.feature-card{
+background:#fff;
+padding:40px 30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+.feature-card h3{
+font-family:'Playfair Display',serif;
+font-size:26px;
+margin-bottom:15px;
+}
+
+.feature-card p{
+color:#666;
+}
+
+/*==========================
+SERVICES
+==========================*/
+
+#services{
+background:#ffffff;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.service-card{
+background:#fff7fa;
+padding:35px;
+border-radius:20px;
+transition:.35s;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card h3{
+font-family:'Playfair Display',serif;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.service-card p{
+color:#666;
+}
+
+/*==========================
+GALLERY
+==========================*/
+
+#gallery{
+background:#fff7fa;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+}
+
+.gallery-grid img{
+height:380px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.03);
+}
+/*==========================
+TESTIMONIALS
+==========================*/
+
+#reviews{
+background:#ffffff;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.testimonial-card{
+background:#fff7fa;
+padding:40px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-8px);
+}
+
+.testimonial-card p{
+font-size:17px;
+font-style:italic;
+color:#555;
+margin-bottom:20px;
+}
+
+.testimonial-card h4{
+color:#d88ca6;
+font-size:22px;
+}
+
+/*==========================
+PROMOTIONS
+==========================*/
+
+#promotions{
+padding:100px 0;
+background:#d88ca6;
+}
+
+.promo-box{
+text-align:center;
+color:#fff;
+max-width:800px;
+margin:auto;
+}
+
+.promo-box h2{
+font-family:'Playfair Display',serif;
+font-size:46px;
+margin-bottom:20px;
+}
+
+.promo-box p{
+font-size:18px;
+line-height:1.8;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+#faq{
+background:#ffffff;
+}
+
+.faq-item{
+background:#fff7fa;
+padding:30px;
+margin-bottom:20px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.faq-item h3{
+margin-bottom:12px;
+font-size:22px;
+font-family:'Playfair Display',serif;
+}
+
+.faq-item p{
+color:#666;
+}
+
+/*==========================
+BOOKING FORM
+==========================*/
+
+#booking{
+background:#fff7fa;
+}
+
+.booking-form{
+max-width:800px;
+margin:auto;
+display:grid;
+gap:20px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+width:100%;
+padding:18px;
+border:1px solid #eee;
+border-radius:12px;
+font-size:16px;
+font-family:'Poppins',sans-serif;
+}
+
+.booking-form button{
+border:none;
+cursor:pointer;
+}
+
+/*==========================
+CONTACT
+==========================*/
+
+#contact{
+background:#ffffff;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:start;
+}
+
+.contact-grid h3{
+margin-top:20px;
+margin-bottom:10px;
+font-family:'Playfair Display',serif;
+font-size:24px;
+}
+
+.contact-grid p{
+color:#666;
+margin-bottom:10px;
+}
+
+.contact-grid iframe{
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+background:#222;
+color:#fff;
+padding:70px 0 30px;
+}
+
+.footer-content{
+text-align:center;
+}
+
+.footer-content h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+margin-bottom:15px;
+}
+
+.footer-content p{
+color:#ddd;
+margin-bottom:20px;
+}
+
+.footer-social{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin:30px 0;
+}
+
+.footer-social a{
+color:#fff;
+transition:.3s;
+}
+
+.footer-social a:hover{
+color:#f7c8d8;
+}
+
+.copyright{
+border-top:1px solid rgba(255,255,255,.15);
+padding-top:25px;
+font-size:14px;
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media (max-width:900px){
+
+nav ul{
+display:none;
+}
+
+.book-btn{
+display:none;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.about-container,
+.contact-grid,
+.testimonial-grid,
+.features-grid,
+.services-grid,
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+.section-heading h2{
+font-size:36px;
+}
+
+.about-text{
+text-align:center;
+}
+
+.gallery-grid img{
+height:280px;
+}
+
+}
+/*==========================
+WHATSAPP BUTTON
+==========================*/
+
+.whatsapp-float{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+.whatsapp-float:hover{
+
+transform:scale(1.12);
+
+}
