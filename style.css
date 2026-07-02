@@ -16,7 +16,7 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
+font-family: 'Cormorant Garamond', serif;
 background:#fff;
 color:#222;
 line-height:1.7;
@@ -63,7 +63,7 @@ text-transform:uppercase;
 }
 
 .section-heading h2{
-font-family:'Playfair Display',serif;
+font-family: 'Cormorant Garamond', serif;
 font-size:48px;
 margin-bottom:15px;
 }
@@ -738,5 +738,239 @@ z-index:9999;
 .whatsapp-float:hover{
 
 transform:scale(1.12);
+
+}
+/* ===== VERSION 2 LUXURY UPDATES ===== */
+
+:root {
+  --primary: #d8a7b8;
+  --secondary: #c48b7d;
+  --light: #fff8fa;
+  --dark: #2f2f2f;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--dark);
+}
+
+section {
+  padding: 90px 8%;
+}
+
+.btn {
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+/* ===== PREMIUM IMAGES ===== */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.hero img,
+.about img,
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+    transition: .4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+/* ===== SECTION TITLES ===== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.6rem;
+    color:#2f2f2f;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+/* ===== LUXURY CARDS ===== */
+
+.service-card,
+.review-card,
+.contact-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.service-card:hover,
+.review-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===== LUXURY BUTTONS ===== */
+
+.btn,
+button,
+input[type="submit"] {
+
+    background: linear-gradient(135deg,#d8a7b8,#c48b7d);
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(196,139,125,.35);
+
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+
+    backdrop-filter: blur(12px);
+
+}
+
+nav a{
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:#c48b7d;
+
+}
+/* ===== GALLERY ===== */
+
+.gallery img{
+
+    aspect-ratio:1/1;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    filter:brightness(92%);
+
+}
+/* ===== LUXURY SECTION ANIMATIONS ===== */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ===== SOFT SHADOWS ===== */
+
+.hero,
+.about,
+.services,
+.gallery,
+.contact,
+.reviews,
+.booking{
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+}/* ===== ELEGANT LINKS ===== */
+
+a{
+
+    transition:.3s ease;
+
+}
+
+a:hover{
+
+    color:#c48b7d;
+
+}
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d8a7b8;
+
+    border-radius:20px;
 
 }
